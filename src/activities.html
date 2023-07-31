@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<title>Activities</title>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Activities</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img src="imgs/icon.png" class="navlogo" draggable="false">
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="./activities" class="active">Activities</a>
+            <a href="./gpt">GPT</a>
+        </div>
+    </div>
+
+    <center>
+        <input class="searchbar" placeholder="Search Activities">
+    </center>
+
+    <div class="files"></div>
+
+    <div class="filecontainer hidden">
+        <div class="fileBar hidden">
+            <button class="back">
+                <img src="imgs/back.png">
+            </button>
+            <span class="fileBarName"></span>
+            <button class="fullscreen">
+                <img src="imgs/fullscreen.png">
+            </button>
+        </div>
+        <div class="playFILE">
+            <!-- //<center> -->
+            <center>
+                <img class="fileIMG" src="">
+            </center>
+            <center>
+                <span class="fileTitle"></span>
+            </center>
+            <center>
+                <button class="playBUTTON">PLAY</button>
+            </center>
+            <center>
+                <button class="goback">GO BACK</button>
+            </center>
+
+
+            <!-- </center> -->
+
+        </div>
+        <iframe frameborder="0" allowfullscreen="true" id="fileFrame" class="fileFrame"></iframe>
+    </div>
+
+    <div class="upbar">
+        <i class="fa-solid fa-arrow-up fa-bounce" style="color: #ffffff;"></i>
+    </div>
+
+    <!-- Scripts Below-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
