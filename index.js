@@ -17,7 +17,7 @@ app.get("/activities", (req, res) => {
 })
 
 app.get("/gpt", (req, res) => {
-    res.sendFile(path.join(initialpath, "gpt.html"))
+    res.sendFile(path.join(initialpath, "gpt404.html"))
 })
 
 app.get("/license", (req, res) => {
@@ -31,6 +31,6 @@ app.get("/subscribe", (req, res) => {
 app.use(express.static(initialpath));
 app.use(express.Router);
 
-// app.listen(port, () => {
-//     console.log(`Server is running on port: ${port}`);
-// });
+app.listen(port, () => {
+    console.log(`Server is running on port: ${port}`);
+});

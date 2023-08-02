@@ -167,7 +167,7 @@ a:any-link {
 .file img {
     width: 200px;
     height: 200px;
-    border-radius: 5px;
+    border-radius: 5px 15px;
 }
 
 .file {
@@ -287,6 +287,7 @@ a:any-link {
     background-color: #444654;
     border: none;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .goback {
@@ -297,6 +298,12 @@ a:any-link {
     background-color: #444654;
     border: none;
     margin-top: 13px;
+    cursor: pointer;
+}
+
+.blocked:hover {
+    cursor: not-allowed;
+    color: darkgray;
 }
 
 /* Activities End */
