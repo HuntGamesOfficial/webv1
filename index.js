@@ -31,6 +31,6 @@ app.get("/subscribe", (req, res) => {
 app.use(express.static(initialpath));
 app.use(express.Router);
 
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server is running on port: ${port}`);
+// });
